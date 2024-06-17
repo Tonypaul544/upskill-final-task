@@ -37,6 +37,12 @@ body {
   width: 100%;
 }
 
+.logo {
+  width: 100px;
+  height: 20px;
+  margin: auto 10px;
+}
+
 ul.navigation {
   font-weight: 700;
   /* background-color: coral; */
@@ -57,7 +63,7 @@ ul.navigation {
 }
 
 .nav-bg{
-  background-color: lightgreen;
+  background-color: rgb(44, 103, 44);
   border-radius: 7px;
   font-size: 14px;
   padding: 3px 7px;
@@ -141,19 +147,20 @@ h3 {
 .demo-btn {
   padding: 5px 8px;
   border-radius: 8px;
-  border: 1.7px solid lightgreen;
+  border: 1.7px solid rgb(44, 103, 44);
   width: 130px;
   font-size: 12px;
 }
 
 .button1 {
-  background-color: lightgreen;
+  background-color: rgb(44, 103, 44);
   color: #fff;
 }
 
 .button2 {
-  color: lightgreen;
+  color: rgb(44, 103, 44);
   background-color: #fff;
+  font-weight: 700;
 }
 
 .first-image {
@@ -259,10 +266,11 @@ h3 {
 }
 
 .button5 {
-  background-color: lightgreen;
+  background-color: rgb(44, 103, 44);
   font-size: 21px;
   width: fit-content;
   padding: 10px 15px;
+  color: #fff;
   display: grid;
   margin: 40px auto;
 }
@@ -312,6 +320,20 @@ h3 {
 
   .desktop-nav .menu:hover .drop-down-menu {
     display: block;
+  }
+
+  .icon-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid-item {
+    width: 150px;
+  }
+
+  .black-bg {
+    display: grid;
+    margin: auto;
   }
 
   .last-sectio-container {
