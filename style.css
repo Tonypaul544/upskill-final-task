@@ -8,6 +8,7 @@
 body {
   overflow-x: hidden;
   background-color: aliceblue;
+  width: 100vw;
 }
 
 :root {
@@ -15,22 +16,26 @@ body {
   --subheading-fnt-size: 25px;
 }
 
+.overall-container {
+  width: 100vw;
+  /* background-color: aquamarine; */
+}
 
 .headersection {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   /* flex-wrap: wrap; */
-  /* width: 97%; */
-  height: 5em;
-  /* margin: auto; */
-  background-color: aliceblue;
+  width: 97%;
+  height: 4em;
+  background-color: rgb(214, 214, 214);
   padding: 0 10px;
   box-sizing: border-box;
   border-bottom: 1px solid #000;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
+  left: 0;
 }
 
 .navbar {
@@ -58,6 +63,7 @@ ul.navigation {
   padding: 0 5px;
 }
 
+
 .menu {
   display: none;
 }
@@ -65,6 +71,7 @@ ul.navigation {
 .nav-bg{
   background-color: rgb(44, 103, 44);
   border-radius: 7px;
+  color: #fff;
   font-size: 14px;
   padding: 3px 7px;
 }
@@ -73,10 +80,10 @@ ul.navigation {
   /* background-color: antiquewhite; */
   display: grid;
   align-items: center;
-  width: 85%;
+  width: 95%;
   text-align: center;
   margin: 30px auto;
-  margin-top: 120px;
+  margin-top: 90px;
 }
 
 .drop-down-menu {
@@ -131,17 +138,26 @@ h3 {
   /* background-color:chartreuse; */
 }
 
+.body-section {
+  margin-top: 90px;
+  padding-bottom: 90px;
+
+}
+
+
 .body-text {
   text-align: center;
   width: 70%;
   margin: auto;
+  margin-top: 10px;
 }
 
 .action-btn-container {
   width: 300px;
+  /* background-color: rgb(11, 184, 80); */
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .demo-btn {
@@ -163,6 +179,10 @@ h3 {
   font-weight: 700;
 }
 
+.trust-amount-container {
+  margin: 50px 0;
+}
+
 .first-image {
   width: 97%;
   min-height: 300px;
@@ -180,19 +200,20 @@ h3 {
 
 .icon-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px 20px;
   padding: 10px;
-  margin: 30px auto;
+  margin: 10px auto;
   align-items: center;
   /* background-color: rgb(231, 245, 246); */
 
 }
 
 .grid-item {
-  width: 200px;
-  height: 60px;
+  width: 250px;
+  height: 80px;
   margin: auto;
+  display: flex;
 }
 
 .item0 {
@@ -201,12 +222,33 @@ h3 {
 
 .black-bg {
   background-color: black;
-  padding: 30px 15px;
+  padding: 30px 20px;
   height: fit-content;
+  height: 300px;
+  width: 100%;
+  display: flex;flex-direction: column;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.third {
+  color: white;
+  margin: auto;
+}
+
+.grid {
+  margin: 50px;
 }
 
 .white {
   color: #fff;
+  /* background-color: cadetblue; */
+  margin: 0;
+  }
+  
+  p, h4.white {
+  text-align: left;
+
 }
 
 .grid {
@@ -225,6 +267,11 @@ h3 {
   margin-top: 50px;
 }
 
+h3.last-headind {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
 .last-sectio-container {
   display: flex;
   flex-direction: row-reverse;
@@ -236,13 +283,20 @@ h3 {
 }
 
 .last-text-container {
-  width: 40%;
-  height: 500px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
-  padding: 10px;
-  /* background-color: burlywood; */
+  width: 43%;
+  /* overflow-x: hidden; */
+  height: 520px;
+  align-self: center;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: rgb(246, 157, 74); */
+}
+
+.last-description {
+  width: 100%;
+  /* background-color: bisque; */
 }
 
 .last-photo {
@@ -253,6 +307,8 @@ h3 {
 
 .last-content {
   width: 90%;
+  /* background-color: cadetblue; */
+  height: fit-content;
 }
 
 .container {
@@ -280,6 +336,25 @@ h3 {
 
 @media only screen and (max-width: 768px) {
 
+  body {
+    width: 90vw;
+    background-color: rgb(228, 228, 228);
+    margin: auto;
+  }
+
+  .overall-container {
+    width: 90vw;
+    /* background-color: rgb(209, 209, 209); */
+    /* overflow: hidden; */
+  }
+
+  /* .headersection {
+    width: 98vw;
+    position: fixed;
+    background-color: rgb(124, 255, 80);
+
+  } */
+
   .navbar {
     display: none;
   }
@@ -289,13 +364,29 @@ h3 {
     margin: auto;
     text-align: center;
   } */
+
+  /* .head {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    width: fit-content;
+  } */
+
   
   .desktop-nav {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
     /* padding: 0 20px; */
     /* gap: 30px; */
+    /* background-color: blueviolet; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
   }
 
   .menu {
@@ -325,6 +416,7 @@ h3 {
   .icon-grid-container {
     display: flex;
     flex-wrap: wrap;
+    /* background-color: rgb(30, 198, 210); */
   }
 
   .grid-item {
@@ -332,8 +424,33 @@ h3 {
   }
 
   .black-bg {
-    display: grid;
+    width: 90%;
+    height: 350px;
+    /* display: grid; */
     margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    background-color: rgb(20, 32, 28);
+  }
+
+  .reason {
+    margin-bottom: 20px;
+  }
+
+  .grid {
+    /* background-color: chocolate; */
+    margin: 20px auto;
+  }
+
+  .white {
+    color: #fff;
+    /* background-color: cadetblue; */
+    left: 0;
+  }
+
+  .body-text {
+    margin: auto;
+    width: 100%;
   }
 
   .last-sectio-container {
@@ -342,7 +459,7 @@ h3 {
     justify-content: space-between;
     margin: auto;
     flex-wrap: wrap;
-    width: 98%;
+    width: 100%;
     height: fit-content;
   }
 
@@ -351,15 +468,51 @@ h3 {
     height: 520px;
     border-radius: 6px;
   }
-  
-  .last-content {
-    width: 100%;
+
+  .last-sectio-container {
+    width: 90%;
+    margin-bottom: 45px;
+    /* background-color: blueviolet; */
   }
+  
+/* .last-content {
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+  background-color: rgb(214, 224, 243);
+  margin-bottom: 10px;
+} */
+    
+    .last-text-container {
+  width: 100%;
+  /* overflow-x: hidden; */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(188, 7, 128); */
+  padding: 0;
+}
+
+/* .last-title {
+  margin: 10px auto;
+  text-align: center;
+} */
 
   .button5 {
     font-weight: 750;
     margin: 20px auto;
-    margin-bottom: 20px;
+    margin-bottom: -35px;
+  }
+
+  .last-content {
+    text-wrap: wrap;
+    width: 95%;
+    box-sizing: border-box;
+    margin: auto;
+    /* background-color: cornsilk; */
+    text-align: center;
+    padding: 15px;
+    /* box-shadow: 0 5px 8px -1px; */
   }
 
 }
