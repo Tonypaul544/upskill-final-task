@@ -421,6 +421,14 @@ h3.last-headind {
     margin: auto;
   }
 
+  img.pix {
+    width: 97%;
+    min-height: 150px;
+    max-height: 500px;
+    display: grid;
+    margin: auto;
+  }
+
   /* ul .nav-bg:hover, .drop-down-menu {
     display: none;
   } */
@@ -453,7 +461,7 @@ h3.last-headind {
   height: 60px;
   margin: auto;
   display: flex;
-  width: 100px;
+  width: 145px;
 }
 
 
