@@ -377,7 +377,7 @@ h3.last-headind {
 
   .drop-down-menu {
     width: 180px;
-    width: 270px;
+    width: 200px;
     height: 100vh;
     right: 0;
     position: absolute;
@@ -386,6 +386,7 @@ h3.last-headind {
     background-color: rgb(214, 214, 214);
     float: right;
     border-radius: 12px;
+    /* display: none; */
     margin-top: -90px;
     position: fixed; 
   }
